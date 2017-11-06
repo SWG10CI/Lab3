@@ -189,7 +189,7 @@
 
 
 
-								//Inserar en preguntas.xml
+								//Insertar en preguntas.xml
 
 								$preguntas = simplexml_load_file('preguntas.xml');
 
@@ -223,7 +223,9 @@
 
 						 		
 						        echo'Se ha añadido la pregunta al xml correctamente<br><br>
-						        	 <a href= VerPreguntasXML.php>Ver Preguntas.xml</a>';
+						        	 <a href= VerPreguntasXML.php>Ver Preguntas.xml</a><br><br>';
+
+						       echo'<a href= VerPreguntasXLS.php>Ver Transformacion(Opcional 1)</a>';	 
 
         						
 							}
