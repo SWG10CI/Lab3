@@ -6,13 +6,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <BODY> 
 <P>Tabla creada mediante VerPreguntas.xsl</P>
 <BR></BR>
+
 <TABLE border="1">
 
 <THEAD>
 
 <TR>
-
-
 
  <TH> Email </TH> 
  <TH> Enunciado </TH>
@@ -61,15 +60,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	</TD>
 
 
-
 	</TR>
 
 </xsl:for-each>
-
-
-
-
-
 
 </TABLE>
 </BODY>

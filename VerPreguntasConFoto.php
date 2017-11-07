@@ -78,10 +78,16 @@
 
 
 	</div>
+
+		<br><br>				     
+		<a href= VerPreguntasXML.php>Ver Preguntas.xml</a><br><br>
+		<a href= VerPreguntasXLS.php>Ver Transformacion(Opcional 1)</a>
+
+
     </section>
 	<footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
-		<a href='https://github.com/SWG10CI/Lab2A'>Link GITHUB</a>
+		<a href='https://github.com/SWG10CI/Lab3'>Link GITHUB</a>
 	</footer>
 </div>
 </body>

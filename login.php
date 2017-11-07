@@ -35,9 +35,7 @@
 			<table>	
 				
 				<tr>
-					<td>
-					<span>Email*: </span>
-			   		</td>
+					<td><span>Email*: </span></td>
 			   		<td><input type="text" id="mail" name="mail"></td>
 
 				</tr>
@@ -80,9 +78,9 @@
 				while ($fila = mysqli_fetch_array($usuario)) {
     				if($fila["pass"]==$_POST['pass']){
     					
-    					echo'Te has logeado correctamente <br>';
+    					echo'Te has logeado correctamente: <br><br>';
     					echo'Puedes <a href="pregunta.php?mail= '. $_POST['mail'] . '">Insertar una nueva Pregunta
-    					</a> o   <a href="VerPreguntasConFoto.php">ver preguntas todas las preguntas preguntas</a> '	;
+    					</a> o   <a href="VerPreguntasConFoto.php">ver todas las preguntas</a> '	;
 
     					echo'<img style="width:50px;height:50px;float: left; border:2px solid black ; margin-left: 3px" src="data:image/jpeg;base64,'.base64_encode( $fila['img'] ).'"/>';
 
@@ -111,13 +109,11 @@
 		?>
 
 
-
-
 	</div>
     </section>
 	<footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
-		<a href='https://github.com/SWG10CI/Lab2A'>Link GITHUB</a>
+		<a href='https://github.com/SWG10CI/Lab3'>Link GITHUB</a>
 	</footer>
 </div>
 

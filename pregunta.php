@@ -36,40 +36,20 @@
 			<table>	
 				
 				<tr>
-					<td>
-					<span>Email*: </span>
-			   		</td>
+					<td><span>Email*: </span></td>
 			   		<td>
-
 			   			<input type="text"  id="mail" name="mail" value ="<?php 
 
 			   				if(isset($_GET["mail"])){
 
 			   							echo(str_replace(' ', '', $_GET["mail"]));
-			   							
-
-
 			   				}			
-
-			   			
-
-
 			   			?>">
-
-
 			   		</td>
-
-
-			   					
-
 				</tr>
 				<tr>
-					<td>
-					<span>Enunciado*: </span>
-					</td>
-					<td>
-					<input type="text" id=enunciado name="enunciado">
-					</td>
+					<td><span>Enunciado*: </span></td>
+					<td><input type="text" id=enunciado name="enunciado"></td>
 				</tr>
 				<tr>
 					<td><span>Repuesta Correcta*: </span></td>
@@ -104,8 +84,6 @@
 
 			<br>
 
-
-
 				<span id="hldr"></span>
 				<input id="fileChos" type="file" name="pic" accept="image/*"  onchange="showImg(this)">
 				<br>
@@ -132,7 +110,6 @@
 							echo '<span style = "padding:5px" > No se permiten campos vacios </span>';
 
 
-
 						elseif (!preg_match($erMail, $_POST['mail'])) {
 								
 							echo '<span style = "padding:5px" > El correo introducido no tiene la estructura adecuada </span>';
@@ -151,15 +128,13 @@
 
 								//Contectar con la base de datos 
 
-								$link = mysqli_connect("localhost", "root", "", "quiz");
+								$link = mysqli_connect("localhost", "id2956012_swg10", "SWG10", "id2956012_quiz");
 								if (!$link)
 								{
 								 echo "Fallo al conectar a MySQL: " . $link->connect_error;
 								}
 
 								//Insertar los datos
-
-
 
 								if ($_FILES['pic']['size'] == 0 ){
 									$pic = addslashes(file_get_contents("img/imgPrev.png"));	
@@ -169,9 +144,6 @@
 								}
 
 								
-
-
-
 								$sql= "INSERT INTO preguntas(email, enunciado,correcta,incorrecta1,incorrecta2,incorrecta3,complejidad,tema,img) VALUES ('$_POST[mail]','$_POST[enunciado]','$_POST[Rcor]','$_POST[RIncor1]','$_POST[RIncor2]','$_POST[RIncor3]',$_POST[complej],'$_POST[tema]', '$pic')";
 
 								//Error al insertar
@@ -201,7 +173,6 @@
 
 								}
 
- 
 						        $nuevaP = $preguntas->addChild('assessmentItem');
 						 
 						        $nuevaP->addAttribute('complexity', $_POST['complej']);
@@ -235,17 +206,11 @@
 
 		?>
 
-
-
-
-
-
-
 	</div>
     </section>
 	<footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
-		<a href='https://github.com/SWG10CI/Lab2A'>Link GITHUB</a>
+		<a href='https://github.com/SWG10CI/Lab3'>Link GITHUB</a>
 	</footer>
 </div>
 
@@ -334,12 +299,6 @@
 
 
 </script>
-
-
-
-
-
-
 
 </body>
 </html>

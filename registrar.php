@@ -35,9 +35,7 @@
 			<table>	
 				
 				<tr>
-					<td>
-					<span>Email*: </span>
-			   		</td>
+					<td><span>Email*: </span></td>
 			   		<td><input type="text" id="mail" name="mail"></td>
 
 				</tr>
@@ -76,8 +74,6 @@
 
 		</form>
 
-
-
 		<?php
 
                 if(isset($_POST['mail'],$_POST['nom'], $_POST['nick'], $_POST['pass'])){
@@ -85,7 +81,7 @@
 
                                 //Contectar con la base de datos 
 
-                                $link = mysqli_connect("localhost", "id2956012_swg10", "SWG10", "id2956012_quiz");
+                               $link = mysqli_connect("localhost", "id2956012_swg10", "SWG10", "id2956012_quiz");
                                 if (!$link)
                                 {
                                  echo "Fallo al conectar a MySQL: " . $link->connect_error;
@@ -121,12 +117,6 @@
                                 // Cerrar conexión
                                 mysqli_close($link);
 
-                                
-
-
-                            
-
-
                 }
 
         ?>
@@ -135,7 +125,7 @@
     </section>
 	<footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
-		<a href='https://github.com/SWG10CI/Lab2A'>Link GITHUB</a>
+		<a href='https://github.com/SWG10CI/Lab3'>Link GITHUB</a>
 	</footer>
 </div>
 
@@ -222,14 +212,6 @@
 
 			});
 		});
-
-
-
-
-
-
-
-
 
 </script>
 

@@ -29,7 +29,7 @@
 	</nav>
     <section class="main" id="s1">
     
-	<div>
+	<div style="float: left; overflow: scroll; height: 300px; ">
 
 		<?php
 
@@ -49,7 +49,7 @@
     </section>
 	<footer class='main' id='f1'>
 		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
-		<a href='https://github.com/SWG10CI/Lab2A'>Link GITHUB</a>
+		<a href='https://github.com/SWG10CI/Lab3'>Link GITHUB</a>
 	</footer>
 </div>
 
